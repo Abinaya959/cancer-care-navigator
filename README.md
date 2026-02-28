@@ -82,11 +82,17 @@ Analytics:
 ## 📁 Project Structure
 src/
 ├── components/
+
 ├── dashboards/
+
 ├── hooks/
+
 ├── context/
+
 ├── lib/
+
 ├── integrations/
+
 └── pages/
 
 
