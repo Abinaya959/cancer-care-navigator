@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 210 80% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 15% 93%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 210 15% 95%;
+    --muted-foreground: 215 10% 50%;
+
+    --accent: 174 60% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --success: 152 60% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --risk-low: 152 60% 40%;
+    --risk-medium: 38 92% 50%;
+    --risk-high: 0 72% 51%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 210 80% 35%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 215 25% 12%;
+    --sidebar-foreground: 210 15% 85%;
+    --sidebar-primary: 210 80% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 20% 18%;
+    --sidebar-accent-foreground: 210 15% 90%;
+    --sidebar-border: 215 20% 20%;
+    --sidebar-ring: 210 80% 55%;
+
+    --gauge-bg: 210 15% 92%;
+    --gauge-low: 152 60% 40%;
+    --gauge-medium: 38 92% 50%;
+    --gauge-high: 0 72% 51%;
+
+    --chart-1: 210 80% 35%;
+    --chart-2: 174 60% 40%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 280 60% 50%;
+    --chart-5: 0 72% 51%;
+  }
+
+  .dark {
+    --background: 215 25% 8%;
+    --foreground: 210 15% 90%;
+    --card: 215 25% 12%;
+    --card-foreground: 210 15% 90%;
+    --popover: 215 25% 12%;
+    --popover-foreground: 210 15% 90%;
+    --primary: 210 80% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 20% 18%;
+    --secondary-foreground: 210 15% 90%;
+    --muted: 215 20% 15%;
+    --muted-foreground: 215 10% 55%;
+    --accent: 174 60% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 20% 20%;
+    --input: 215 20% 20%;
+    --ring: 210 80% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .clinical-shadow {
+    box-shadow: 0 1px 3px 0 hsl(215 25% 15% / 0.06), 0 1px 2px -1px hsl(215 25% 15% / 0.06);
+  }
+  .clinical-shadow-md {
+    box-shadow: 0 4px 6px -1px hsl(215 25% 15% / 0.07), 0 2px 4px -2px hsl(215 25% 15% / 0.05);
+  }
+  .clinical-shadow-lg {
+    box-shadow: 0 10px 15px -3px hsl(215 25% 15% / 0.08), 0 4px 6px -4px hsl(215 25% 15% / 0.04);
+  }
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(210 80% 35%), hsl(210 80% 45%));
+  }
+  .gradient-sidebar {
+    background: linear-gradient(180deg, hsl(215 25% 10%), hsl(215 25% 14%));
+  }
+  .gradient-accent {
+    background: linear-gradient(135deg, hsl(174 60% 40%), hsl(174 60% 50%));
+  }
+}
